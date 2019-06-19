@@ -13177,7 +13177,7 @@
               var alpha = Konva.getAngle(this.getNode().rotation());
               var newAlpha = Util._degToRad(newRotation);
               var snaps = this.rotationSnaps();
-              var offset = 0.1;
+              var offset = 0.02;
               for (var i = 0; i < snaps.length; i++) {
                   var angle = Konva.getAngle(snaps[i]);
                   var dif = Math.abs(angle - Util._degToRad(newRotation)) % (Math.PI * 2);
